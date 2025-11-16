@@ -205,3 +205,29 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Dữ liệu âm thanh - bỏ qua tất cả file .wav
+*.wav
+
+# Thư mục dữ liệu - giữ cấu trúc thư mục nhưng bỏ qua nội dung
+data/processed/*
+!data/processed/.gitkeep
+
+# RAVDESS dataset
+data/raw/ravdess/audio_speech_actors_01-24/*
+!data/raw/ravdess/audio_speech_actors_01-24/Actor_*/
+data/raw/ravdess/Actor_*/*.wav
+
+# CREMA-D dataset  
+data/raw/crema_d/AudioWAV/*
+!data/raw/crema_d/AudioWAV/.gitkeep
+
+# SAVEE dataset
+data/raw/savee/ALL/*
+!data/raw/savee/ALL/.gitkeep
+
+# TESS dataset
+data/raw/tess/**/*.wav
+
+# Giữ lại file .gitkeep để duy trì cấu trúc thư mục trống
+!.gitkeep
