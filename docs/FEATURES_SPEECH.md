@@ -10,6 +10,19 @@ Trong bài toán nhận diện cảm xúc qua lời nói (Speech Emotion Recogni
 - **Năng lượng / Biên độ** (Energy / Amplitude): Độ lớn của giọng nói.
 - **Thời gian** (Temporal Features): Tốc độ nói, thời gian dừng/nghỉ.
 
+### Zero Crossing Rate (ZCR)
+**Zero Crossing Rate** là tần suất mà tín hiệu âm thanh thay đổi dấu (từ dương sang âm hoặc ngược lại) trong một khoảng thời gian nhất định. 
+
+- **Ý nghĩa**: ZCR cao thường biểu thị âm thanh có nhiều tần số cao (như âm /s/, /f/), trong khi ZCR thấp biểu thị âm thanh có nhiều tần số thấp (như nguyên âm).
+- **Ứng dụng trong SER**: Các cảm xúc khác nhau có thể tạo ra các đặc điểm ZCR khác nhau. Ví dụ, giận dữ có thể tạo ra nhiều âm sắc cao hơn, dẫn đến ZCR cao hơn.
+
+### Root Mean Square Energy (RMSE)
+**Root Mean Square Energy** đo lường năng lượng trung bình của tín hiệu âm thanh, phản ánh độ "mạnh" hoặc "to" của giọng nói.
+
+- **Công thức**: $RMSE = \sqrt{\frac{1}{N} \sum_{i=1}^{N} x_i^2}$ 
+- **Ý nghĩa**: RMSE cao có nghĩa là giọng nói to và mạnh mẽ, RMSE thấp có nghĩa là giọng nói nhỏ và yếu.
+- **Ứng dụng trong SER**: Các cảm xúc như giận dữ, vui vẻ thường có RMSE cao hơn so với buồn bã, sợ hãi.
+
 ## 2. Nhóm Feature Phổ (Spectral Features)
 
 Các đặc trưng mô tả sự phân bố năng lượng của tín hiệu theo tần số, liên quan đến âm sắc (timbre) và màu sắc giọng nói.
