@@ -231,3 +231,6 @@ data/raw/tess/**/*.wav
 
 # Giữ lại file .gitkeep để duy trì cấu trúc thư mục trống
 !.gitkeep
+
+# Thư mục mô hình đã huấn luyện - bỏ qua tất cả nội dung bên trong
+*.pth
